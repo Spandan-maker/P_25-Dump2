@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -25,7 +24,7 @@ function setup() {
 	rod2 = new Rod(1000, 380, 115, 10);
 	rod3 = new Rod(1057, 306, 10, 155);
 
-	paper1 = new Paper(220,300,75);
+	paper1 = new Paper(200,300,30);
 
 	ground = new Ground(600,400,1200,20);
 	
@@ -61,7 +60,6 @@ function draw() {
 
 function shoot(){
 	if (keyDown(UP_ARROW)){
-		Matter.Body.applyForce(paper1.body, paper1.body.position, {x : 1, y : -2});
+		Matter.Body.applyForce(paper1.body, paper1.body.position, {x : 2, y : -3});
 	}
 }
-
