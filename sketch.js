@@ -25,7 +25,7 @@ function setup() {
 	rod2 = new Rod(1000, 380, 115, 10);
 	rod3 = new Rod(1057, 306, 10, 155);
 
-	paper1 = new Paper(200,300,75);
+	paper1 = new Paper(220,300,75);
 
 	ground = new Ground(600,400,1200,20);
 	
